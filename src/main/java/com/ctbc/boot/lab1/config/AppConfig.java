@@ -1,5 +1,7 @@
 package com.ctbc.boot.lab1.config;
 
+// 設定檔
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -15,7 +17,7 @@ public class AppConfig {
 	public Calculator calculator1 () {
 		return new AddCalculator();
 	}
-	@Bean("substractBean")
+	@Bean("subtractBean")
 	public Calculator calculator2() {
 		return new SubCalculator();
 	}

@@ -1,6 +1,5 @@
 package com.ctbc.boot.lab1.runner;
 
-import java.applet.AppletContext;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -26,13 +25,13 @@ public class BeanRunner implements CommandLineRunner{
 		int y = 6;
 		
 		// context.getBean(類別.class).類別裡的方法(x, y)
-		// add
+		// add (from com.ctbc.boot.lab1.config)
 		log.info("Use ApplicationContext and add bean");
 		log.info("{} + {} = {}",x,y,context.getBean("addBean",Calculator.class).calc(x, y));
 		
-		// substract
-		log.info("Use ApplicationContext and substract bean");
-		log.info("{} - {} = {}",x,y,context.getBean("substractBean",Calculator.class).calc(x, y));
+		// subtract (from com.ctbc.boot.lab1.config)
+		log.info("Use ApplicationContext and subtract bean");
+		log.info("{} - {} = {}",x,y,context.getBean("subtractBean",Calculator.class).calc(x, y));
 	}
 	
 

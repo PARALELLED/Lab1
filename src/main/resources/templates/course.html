@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF8">
+    <title>
+        課程管理介面
+    </title>
+</head>
+
+<body>
+    <h1>課程表單</h1>
+    <form th:object="${courseForm}" method="post" th:action="@{/course}">
+        <table>
+            <tr>
+                <td>課程ID : </td>
+                <td><input type="text" th:field="*{courseId}" /></td>
+                <td th:errors="*{courseId}">如果ID錯誤，在此顯示</td>
+            </tr>
+            <tr>
+                <td>課程名稱 : </td>
+                <td><input type="text" th:field="*{courseName}" /></td>
+                <td th:errors="*{courseName}">如果Name錯誤，在此顯示</td>
+            </tr>
+            <tr>
+                <td>課程時數 : </td>
+                <td><input type="text" th:field="*{duration}" /></td>
+                <td th:errors="*{duration}"></td>
+            </tr>
+            <tr>
+                <td><button type="submit">submit</td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
