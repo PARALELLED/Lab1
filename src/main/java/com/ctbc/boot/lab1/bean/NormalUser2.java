@@ -1,14 +1,14 @@
-package com.ctbcbank.boot.lab1.bean;
+package com.ctbc.boot.lab1.bean;
+
+import javax.validation.constraints.NotEmpty;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
-import javax.validation.constraints.NotEmpty;
-
 @AllArgsConstructor
 @Data
 public class NormalUser2 {
-	@NotEmpty(message = "Name　should not be null")
+	@NotEmpty(message = "Name should not be empty")
 	private String name;
 
 }

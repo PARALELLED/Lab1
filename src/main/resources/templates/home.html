@@ -2,14 +2,13 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmls="http://www.thymeleaf.org">
 
 <body>
-    <h1>純手刻的html</h1>
-    <img src="/images/img2.png" /> <!-- <img src = "myapp1//images/img2.png">  -->
-    <br />
-
-    <h2>使用thymeleaf</h2>
-    <h2 th:text="${messageHTML}"></h2>
-    <!-- 輸出message -->
-    <img th:src="@{/images/tool_owl.svg}">
+	<h1>純手刻的html</h1>
+	<img src="/images/img2.png" /> <!-- <img src="myapp1/" -->
+	<br />
+	
+	<h2>使用thymeleaf</h2>
+	<h2 th:text="${messageHTML}"></h2> <!-- 輸出message -->
+	<img th:src="@{/images/img3.png}" />
 </body>
 
 </html>

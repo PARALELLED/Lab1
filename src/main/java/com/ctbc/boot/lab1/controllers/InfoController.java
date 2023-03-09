@@ -1,4 +1,4 @@
-package com.ctbcbank.boot.lab1.controllers;
+package com.ctbc.boot.lab1.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

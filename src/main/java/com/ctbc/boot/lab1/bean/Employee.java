@@ -1,4 +1,4 @@
-package com.ctbcbank.boot.lab1.bean;
+package com.ctbc.boot.lab1.bean;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
